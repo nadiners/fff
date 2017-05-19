@@ -2,25 +2,28 @@ body{ font-family: Helvetica; }
 ul li { list-style: none;
  }
  a{text-decoration: none;}
- header{float: right
- }
- header ul li{
+.head-nav{
+	float: right;
+}
+.head-nav ul li{
+ 	text-align: right;
  	display: inline-block;
  	padding: 10px;
  }
 .level-split{
 }
-
-.w3-sidebar{
+.sidebar{
+	height: 100%;
+	position: fixed;
 	border-right: solid 5px red;
-	padding:10px;
-	width: 300px;}
+	}
 .w3-panel{
 	padding-right: 0px;}
 .w3-container{
 	margin-left: 184px;}
+.welcome{
+	margin-left: 50px;}
 .logo{font-size: 50px;}
-
 ::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 10px;
@@ -30,9 +33,21 @@ ul li { list-style: none;
   background-color: red;
   -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
+.right-bar{
+	margin-right:100px; 
+	background-color: black;
+	color: white;
+	padding: 10px;
+	right: 0}
+.product img{
+	padding: 4px;
+	filter:grayscale(100%)}
+.product img:hover {filter:grayscale(0%)}
+
 .on-surface{
 /*background-color: #F9E8E0;
 	height: 300px;*/
+	margin-left: 50px;
 	overflow: scroll;
 	padding-bottom: 0;
 	padding-left: 20px;}
