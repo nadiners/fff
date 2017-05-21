@@ -23,9 +23,8 @@
 		<ul class="menu">
 			<li><a href="">index</a></li>
 			<li><a href="">about</a></li>
-			<li><a href="film.html">fffilms</a></li>
-			<li><a href="texts.html">texts on food</a></li>
-			<li><a href="art.html">f-art</a></li>
+			<li><a href="film.html">films</a></li>
+			<li><a href="text.html">Texts</a></li>
 			<li><a href="">legal</a></li>
 			<li><a href="">contribute</a></li>
 		</ul>
@@ -35,28 +34,18 @@
 	
 <!-- 	////////////////////CONTENT//////////////-->
 <div class="w3-container w3-col m10">
+<h1 class="product-title">Magnum Classic</h1>
+<div class="img-product"><img src="img/magnum.png" alt=""></div>
 
 <div class="w3-bar">
-  <button class="w3-bar-item w3-button1" onclick="openCity('page')">Page</button>
-  <button class="w3-bar-item w3-button2" onclick="openCity('discussion')">Discussion</button>
-  <button class="w3-bar-item w3-button1" onclick="openCity('edit')">Edit</button>
-    <button class="w3-bar-item w3-button3" onclick="openCity('history')">History</button>
+  <button class="w3-bar-item w3-button1" onclick="openCity('London')">On the surface</button>
+  <button class="w3-bar-item w3-button2" onclick="openCity('Paris')">grey area</button>
+  <button class="w3-bar-item w3-button3" onclick="openCity('Tokyo')">What they don't want you to know!</button>
 </div>
 
-<div id="page" class="on-surface city">
-
-	<h1 class="product-title">Magnum Classic</h1>
-	<div class="img-product"><img src="img/magnum.png" alt=""></div>
-
-	<div class="w3-bar">
-	  <button class="w3-bar-item w3-button1" onclick="openCity('white')">On the surface</button>
-	  <button class="w3-bar-item w3-button2" onclick="openCity('grey')">grey area</button>
-	  <button class="w3-bar-item w3-button3" onclick="openCity('black')">What they don't want you to know!</button>
-	</div>
-
-	<div id="white" class="on-surface city">
-	  <h2>On the Surface</h2>
-	 			 <ul>
+<div id="London" class="on-surface city">
+  <h2>On the Surface</h2>
+ 			 <ul>
 				<li><span class="on-data">Portion</span>:<span class="on-answer">86g</span></li>
 				<li><span class="on-data">Packaging</span>:<span class="on-answer">Plastic</span>, <span class="on-answer">bag</span>, <span class="on-answer">frozen</span></li>
 				<li><span class="on-data">Sub-brand</span>:<span class="on-answer">Magnum</span>, <span class="on-answer">Heartbrand</span></li>
@@ -73,7 +62,7 @@
 			</ul>
 </div>
 
-<div id="grey" class="grey-area city" style="display:none">
+<div id="Paris" class="grey-area city" style="display:none">
   <h2>Grey Area</h2>
  <ul>
 					<h1>Decrypting the ingredients</h1>
@@ -88,7 +77,7 @@
 				</ul>
 </div>
 
-<div id="black" class="below-surface city" style="display:none">
+<div id="Tokyo" class="below-surface city" style="display:none">
   <h2>Underneath the Surface</h2>
  <ul>
 					<h1>Nutrition facts</h1>
@@ -117,17 +106,6 @@
 					<li>case itself</li>
 					<li>reports</li>				
 				</ul>
-	</div>
-</div><!-- /end page tab -->
-
-<div id="discussion" class="on-surface city">
-	some discussion
-</div>
-<div id="edit" class="on-surface city">
-	some editing
-</div>
-<div id="history" class="on-surface city">
-	some history
 </div>
 
 <script>

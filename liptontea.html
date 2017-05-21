@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link href="https://fonts.googleapis.com/css?family=Unna" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Yantramanav:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/w3.css">
@@ -23,40 +21,18 @@
 		<ul class="menu">
 			<li><a href="">index</a></li>
 			<li><a href="">about</a></li>
-			<li><a href="film.html">fffilms</a></li>
-			<li><a href="texts.html">texts on food</a></li>
-			<li><a href="art.html">f-art</a></li>
 			<li><a href="">legal</a></li>
 			<li><a href="">contribute</a></li>
 		</ul>
 	</div> <!-- /end sidebar -->
 
-	
-	
 <!-- 	////////////////////CONTENT//////////////-->
-<div class="w3-container w3-col m10">
+<div class="w3-container">
 
-<div class="w3-bar">
-  <button class="w3-bar-item w3-button1" onclick="openCity('page')">Page</button>
-  <button class="w3-bar-item w3-button2" onclick="openCity('discussion')">Discussion</button>
-  <button class="w3-bar-item w3-button1" onclick="openCity('edit')">Edit</button>
-    <button class="w3-bar-item w3-button3" onclick="openCity('history')">History</button>
-</div>
-
-<div id="page" class="on-surface city">
-
-	<h1 class="product-title">Magnum Classic</h1>
-	<div class="img-product"><img src="img/magnum.png" alt=""></div>
-
-	<div class="w3-bar">
-	  <button class="w3-bar-item w3-button1" onclick="openCity('white')">On the surface</button>
-	  <button class="w3-bar-item w3-button2" onclick="openCity('grey')">grey area</button>
-	  <button class="w3-bar-item w3-button3" onclick="openCity('black')">What they don't want you to know!</button>
-	</div>
-
-	<div id="white" class="on-surface city">
-	  <h2>On the Surface</h2>
-	 			 <ul>
+	<div class="on-surface">
+			<h1 class="product-title">Lipton Yellow Label Tea</h1>
+			<div class="img-product"><img width="300px" src="img/liptontea.jpg" alt=""></div>
+			<ul>
 				<li><span class="on-data">Portion</span>:<span class="on-answer">86g</span></li>
 				<li><span class="on-data">Packaging</span>:<span class="on-answer">Plastic</span>, <span class="on-answer">bag</span>, <span class="on-answer">frozen</span></li>
 				<li><span class="on-data">Sub-brand</span>:<span class="on-answer">Magnum</span>, <span class="on-answer">Heartbrand</span></li>
@@ -71,11 +47,9 @@
 				<li><span class="on-data">Nutrients</span>:<span class="on-answer"></span></li>
 
 			</ul>
-</div>
-
-<div id="grey" class="grey-area city" style="display:none">
-  <h2>Grey Area</h2>
- <ul>
+		</div> <!-- end on-surface -->
+			<div class="grey-area">
+				<ul>
 					<h1>Decrypting the ingredients</h1>
 					<li>complex: origin / where actually grown</li>
 					<li>Additives</li>
@@ -86,11 +60,10 @@
 					<li>of brand</li>
 					<li>of product</li>
 				</ul>
-</div>
-
-<div id="black" class="below-surface city" style="display:none">
-  <h2>Underneath the Surface</h2>
- <ul>
+			</div>
+		<div class="level-split"></div>
+			<div class="below-surface">
+				<ul>
 					<h1>Nutrition facts</h1>
 					<li>NutriScore</li>
 					<h1>Ethical/Environmental facts of brand</h1>
@@ -117,30 +90,8 @@
 					<li>case itself</li>
 					<li>reports</li>				
 				</ul>
-	</div>
-</div><!-- /end page tab -->
-
-<div id="discussion" class="on-surface city">
-	some discussion
-</div>
-<div id="edit" class="on-surface city">
-	some editing
-</div>
-<div id="history" class="on-surface city">
-	some history
-</div>
-
-<script>
-function openCity(cityName) {
-    var i;
-    var x = document.getElementsByClassName("city");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    document.getElementById(cityName).style.display = "block";  
-}
-</script>
-
+			</div>
+	</div><!-- /end container -->
 	
 </body>
 </html>
